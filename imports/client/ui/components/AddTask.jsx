@@ -11,6 +11,7 @@ class AddTask extends React.Component{
     event.preventDefault();
     var task =this.refs.taskText.value
     Meteor.call('insertTask', task)
+    this.refs.taskText.value = "";
   }
   render() {
         return (

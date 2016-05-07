@@ -1,10 +1,11 @@
 import React from 'react'
 import AddTask from '/imports/client/ui/components/AddTask.jsx'
+import TaskList from '/imports/client/ui/containers/TaskList.js'
 
 const Main = () => (
   <div>
       <AddTask />
-      Hola Mundo Component
+      <TaskList />
   </div>
 )
 

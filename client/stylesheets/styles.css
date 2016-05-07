@@ -1,0 +1,19 @@
+.content{
+  padding:1em;
+}
+
+.nav-wrapper{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@font-face {
+font-family: 'Material Icons';
+src:url("../font/material-design-icons/Material-Design-Icons.woff2") format('woff2') !important;
+}
+
+.material-icons {
+font-family: 'Material Icons' !important;
+font-weight: normal;
+font-style: normal;
+}

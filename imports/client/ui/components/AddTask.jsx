@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { Meteor } from 'react-dom';
+import { Meteor } from 'meteor/meteor';
 
 class AddTask extends React.Component{
   constructor(props){
@@ -9,7 +9,8 @@ class AddTask extends React.Component{
   }
   addTask(event){
     event.preventDefault();
-    console.log(this.refs.taskText.value)
+    var task =this.refs.taskText.value
+    Meteor.call('insertTask', task)
   }
   render() {
         return (
